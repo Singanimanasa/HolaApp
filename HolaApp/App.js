@@ -31,7 +31,7 @@
 // const App = () => {
 //   return (
 //      <View style ={{
-  //       width: 100,
+//       width: 100,
 //         height: 100,
 //         borderRadius: 100/2,
 //         backgroundColor: "red",}}> 
@@ -41,22 +41,24 @@
 
 //  export default  App
 
-import {View, Text} from "react-native"
+import { View, Text } from "react-native"
 const App = () => {
   return (
-    <View style ={{width:"100%",alignItems:"center"}}>
-     <View style ={{width: 100,
+    <View style={{ width: "100%", alignItems: "center" }}>
+      <View style={{
+        width: 100,
         height: 100,
         borderRadius: 50,
         backgroundColor: "red",
-        paddingLeft:50,
-        transform: [{scaleX:2}]}}> 
-       </View>
-       </View>
-   )
- }
+        paddingLeft: 50,
+        transform: [{ scaleX: 2 }]
+      }}>
+      </View>
+    </View>
+  )
+}
 
- export default  App
+export default App
 
 // import {View, Text} from "react-native"
 // const App = () => {
