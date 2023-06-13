@@ -1,0 +1,1 @@
+export const LOGO = "https://cdn2.vectorstock.com/i/1000x1000/47/51/letter-h-logo-design-initials-h-logo-vector-29014751.jpg"
