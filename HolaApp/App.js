@@ -254,16 +254,16 @@ import { Text,View,Image,StyleSheet,TextInput, TouchableHighlight } from "react-
 import { LOGO } from "./constants";
 
 const App =()=> {
-    const [email, setEmail]= useState('');
+    const [username, setUsername]= useState('');
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        if(email === '') {
-            console.log('please enter email');
+        if(username === '') {
+            console.log('please enter username');
         } else if(password==='') {
             console.log('please enter password');
         } else {
-            console.log(email,password);
+            console.log(username,password);
         }
     }
     return(
@@ -274,9 +274,9 @@ const App =()=> {
                 <View style= {style.insta}>
                     <Text style={{color:'black'}}>Instagram</Text>
                 <TextInput
-                placeholder=" Username"
-                value={ Username}
-                onChangeText= {(value) =>setEmail(value)}
+                placeholder="Username"
+                value={username}
+                onChangeText= {(value) =>setUsername(value)}
                 placeholderTextColor={'gray'}
                 style={style.textField}/>
                 <TextInput
@@ -348,13 +348,18 @@ const style= StyleSheet.create({
         alignItems:'center',
         justifyContent:'center',
         marginTop:'5%',
-        marginBottom:'10%',
+        marginBottom:'15%',
     },
     
     forgotpassword:{
-        marginBottom:'5%',
+        marginBottom:'10%',
         marginTop:'10%'
-    }
+    },
+    dontHave:{
+        marginBottom:'10%',
+        marginTop:'10%'
+
+    },
        
 })
 export default App
